@@ -1,0 +1,69 @@
+@font-face {
+    font-family: 'bold';
+    src: url(./assets/fonts/fa-solid-900.woff2);
+}
+
+@font-face {
+    font-family: 'light';
+    src: url(./assets/fonts/fa-brands-400.woff2);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    background-image: url(./assets/images/bg.jpg);
+}
+
+body::after {
+    background: url("assets/images/overlay.png");
+}
+
+/* Nav Section */
+
+nav {
+
+    color: #ffffffb4;
+    font-size: 2rem;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+}
+
+
+nav ul li {
+    padding: 1rem;
+    list-style-type: none;
+}
+
+/* end of Nav Section */
+
+/* Card Content */
+
+.card {
+    display: flex;
+    flex-direction: row;
+    width: 850px;
+    background-color: #ffffff;
+}
+
+.card .card-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 0;
+}
+
+.card-text .name-text {
+    font-family: 'bold';
+}
+
+.card-text .info-text {
+    font-family: 'light';
+}
