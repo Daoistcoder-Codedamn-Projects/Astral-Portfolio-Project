@@ -1,10 +1,10 @@
 @font-face {
-    font-family: 'bold';
+    font-family: "bold";
     src: url(./assets/fonts/fa-solid-900.woff2);
 }
 
 @font-face {
-    font-family: 'light';
+    font-family: "light";
     src: url(./assets/fonts/fa-brands-400.woff2);
 }
 
@@ -18,13 +18,12 @@ body {
 }
 
 body::after {
-    background: url("assets/images/overlay.png");
+    background-image: url("assets/images/overlay.png");
 }
 
 /* Nav Section */
 
 nav {
-
     color: #ffffffb4;
     font-size: 2rem;
 }
@@ -33,7 +32,6 @@ nav ul {
     display: flex;
     flex-direction: row;
 }
-
 
 nav ul li {
     padding: 1rem;
@@ -61,9 +59,10 @@ nav ul li {
 }
 
 .card-text .name-text {
-    font-family: 'bold';
+    margin: 0;
+    font-family: "bold";
 }
 
 .card-text .info-text {
-    font-family: 'light';
+    font-family: "light";
 }
