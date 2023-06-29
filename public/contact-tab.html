@@ -1,22 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Me</title>
-</head>
-<body>
-    <div>
-        <h1>Contact Me</h1>
-        <form action="#0">
-            <input type="text" placeholder="Name">
-            <input type="text" placeholder="Email">
-            <br>
-            <input type="text" placeholder="Subjeect">
-            <textarea name="message" id="" cols="30" rows="10" placeholder="Message"></textarea>
-            <button>Send Message</button>
-        </form>
-    </div>
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="stylesheet"
+            href="../assets/font-awesome/css/font-awesome.min.css"
+        />
+        <link rel="stylesheet" href="../base.css" />
+        <title>Contact Me</title>
+
+        <style>
+            .contact-card {
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                margin: 0;
+                padding: 1rem 2rem 2rem;
+                background-color: #ffffff;
+                width: 600px;
+            }
+
+            .contact-card h1 {
+                text-align: left;
+                font-family: "bold";
+            }
+
+            .contact-card input {
+                background-color: #e7e4e4;
+                border-style: hidden;
+                padding: 0.7rem;
+                border-radius: 5px;
+                font-family: "light";
+                font-size: 0.9rem;
+            }
+
+            .contact-card input:focus {
+                outline: none;
+                border-style: solid;
+                border-color: black;
+            }
+
+            .user-info {
+                display: flex;
+                justify-content: space-between;
+                gap: 1rem;
+                margin-bottom: 1rem;
+            }
+
+            .user-info input {
+                width: 48%;
+            }
+
+            .message-info {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .message-info textarea {
+                background-color: #e7e4e4;
+                border-style: hidden;
+                font-family: "light";
+                padding: 0.7rem;
+                border-radius: 5px;
+                margin-top: 1rem;
+                margin-bottom: 1rem;
+            }
+
+            .message-info textarea:focus {
+                outline: none;
+                border-style: solid;
+                border-color: black;
+            }
+
+            .message-info button {
+                border-radius: 2px;
+                border: none;
+                width: 18%;
+                padding: 0.7rem;
+                font-family: "light";
+                background-color: #222;
+                color: #f4f4f4;
+            }
+
+            .fa-envelope {
+                color: #ffffff;
+            }
+
+            .arrow-up {
+                top: -20px;
+                left: 53.9%;
+            }
+        </style>
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li>
+                    <i class="fa fa-home"></i>
+                </li>
+                <li>
+                    <i class="fa fa-folder"></i>
+                </li>
+                <li>
+                    <i class="fa fa-envelope"></i>
+                </li>
+                <li>
+                    <i class="fa fa-twitter"></i>
+                </li>
+            </ul>
+        </nav>
+        <div class="contact-card">
+            <div class="arrow-up"></div>
+            <h1>Contact Me</h1>
+            <form action="#0">
+                <div class="user-info">
+                    <input type="text" placeholder="Name" />
+                    <input type="text" placeholder="Email" />
+                </div>
+                <div class="message-info">
+                    <input type="text" placeholder="Subject" />
+                    <textarea
+                        name="message"
+                        id=""
+                        cols="30"
+                        rows="10"
+                        placeholder="Message"
+                    ></textarea>
+                    <button>Send Message</button>
+                </div>
+            </form>
+        </div>
+    </body>
 </html>
