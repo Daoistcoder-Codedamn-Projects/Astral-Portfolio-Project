@@ -1,32 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="stylesheet"
+            href="../assets/font-awesome/css/font-awesome.min.css"
+        />
+        <link rel="stylesheet" href="../base.css" />
+        <title>Work Tab</title>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Work Tab</title>
-</head>
+        <style>
+            .work-card {
+                position: relative;
+                width: 850px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin: 0;
+                padding: 0;
+                background-color: #ffffff;
+            }
 
-<body>
-    <h1>Work</h1>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut, optio quo? Mollitia, veritatis, obcaecati dolores
-        sunt veniam consequatur quaerat debitis impedit perferendis provident commodi sequi voluptate quas error
-        repudiandae nam.</p>
-    <div>
-        <img src="../assets/images/pic01.jpg" alt="pic01">
-        <img src="../assets/images/pic02.jpg" alt="pic02">
-        <img src="../assets/images/pic03.jpg" alt="pic03">
-        <img src="../assets/images/pic04.jpg" alt="pic04">
-        <img src="../assets/images/pic05.jpg" alt="pic05">
-        <img src="../assets/images/pic06.jpg" alt="pic06">
-        <img src="../assets/images/pic07.jpg" alt="pic07">
-        <img src="../assets/images/pic08.jpg" alt="pic08">
-        <img src="../assets/images/pic09.jpg" alt="pic09">
-        <img src="../assets/images/pic10.jpg" alt="pic10">
-        <img src="../assets/images/pic11.jpg" alt="pic11">
-        <img src="../assets/images/pic12.jpg" alt="pic12">
-    </div>
-</body>
+            .text-side {
+                width: 92%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
 
+            .title-text {
+                font-family: "bold";
+                margin-bottom: 0;
+            }
+
+            .info-text {
+                font-family: "light";
+            }
+
+            .image-side {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .image-side img {
+                margin: 0.1rem;
+            }
+
+            .fa-folder {
+                color: #ffffff;
+            }
+
+            .arrow-up {
+                top: -20px;
+                left: 45.8%;
+            }
+        </style>
+    </head>
+
+    <body>
+        <nav>
+            <ul>
+                <li>
+                    <i class="fa fa-home"></i>
+                </li>
+                <li>
+                    <i class="fa fa-folder"></i>
+                </li>
+                <li>
+                    <i class="fa fa-envelope"></i>
+                </li>
+                <li>
+                    <i class="fa fa-twitter"></i>
+                </li>
+            </ul>
+        </nav>
+        <div class="work-card">
+            <div class="arrow-up"></div>
+            <div class="text-side">
+                <h1 class="title-text">Work</h1>
+                <p class="info-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Molestiae optio est quisquam culpa quam autem ullam ipsum
+                    odit odio quidem aspernatur, eveniet, in animi incidunt
+                    suscipit pariatur voluptatem ut quia.
+                </p>
+            </div>
+            <div class="image-side">
+                <img src="../assets/images/pic01.jpg" alt="pic01" />
+                <img src="../assets/images/pic02.jpg" alt="pic02" />
+                <img src="../assets/images/pic03.jpg" alt="pic03" />
+                <img src="../assets/images/pic04.jpg" alt="pic04" />
+                <img src="../assets/images/pic05.jpg" alt="pic05" />
+                <img src="../assets/images/pic06.jpg" alt="pic06" />
+                <img src="../assets/images/pic07.jpg" alt="pic07" />
+                <img src="../assets/images/pic08.jpg" alt="pic08" />
+                <img src="../assets/images/pic09.jpg" alt="pic09" />
+                <img src="../assets/images/pic10.jpg" alt="pic10" />
+                <img src="../assets/images/pic11.jpg" alt="pic11" />
+                <img src="../assets/images/pic12.jpg" alt="pic12" />
+            </div>
+        </div>
+    </body>
 </html>
