@@ -1,11 +1,11 @@
 @font-face {
     font-family: "bold";
-    src: url(./assets/fonts/fa-solid-900.woff2);
+    src: url(./assets/fonts/6xK3dSBYKcSV-LCoeQqfX1RYOo3qOK7lujVj9w.woff2);
 }
 
 @font-face {
     font-family: "light";
-    src: url(./assets/fonts/fa-brands-400.woff2);
+    src: url(./assets/fonts/6xKydSBYKcSV-LCoeQqfX1RYOo3ik4zwlxdu3cOWxw.woff2);
 }
 
 body {
@@ -18,7 +18,7 @@ body {
 }
 
 body::after {
-    background-image: url("assets/images/overlay.png");
+    background: url("assets/images/overlay.png");
 }
 
 /* Nav Section */
@@ -34,35 +34,84 @@ nav ul {
 }
 
 nav ul li {
-    padding: 1rem;
+    padding-inline: 1rem;
     list-style-type: none;
+}
+
+nav .fa-home {
+    color: #ffffff;
 }
 
 /* end of Nav Section */
 
 /* Card Content */
 
-.card {
+.arrow-up {
+    position: absolute;
+    top: -20px;
+    left: 38.5%;
+    width: 0;
+    height: 0;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+
+    border-bottom: 30px solid #fff;
+}
+
+.profile-card {
+    position: relative;
     display: flex;
     flex-direction: row;
     width: 850px;
     background-color: #ffffff;
 }
 
-.card .card-text {
+.profile-card .text-side {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    margin: auto;
-    padding: 0;
+    padding: 2rem;
+    width: 65%;
 }
 
-.card-text .name-text {
+.profile-card .image-side {
+    width: 35%;
+}
+
+.image-side img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profile-card button {
+    border: none;
+    padding: 1.5rem;
+    font-size: 1.5rem;
+    color: #ffffff;
+    position: absolute;
+    right: 0;
+    top: 40%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.text-side .name-text {
     margin: 0;
     font-family: "bold";
 }
 
-.card-text .info-text {
+.text-side .info-text {
+    margin: 0;
     font-family: "light";
+    color: gray;
 }
+
+/* end of Card Content */
+
+/* Footer Section */
+footer,
+a {
+    color: #f4f4f4;
+    font-size: 0.9rem;
+}
+/* end of Footer Section */
