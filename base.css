@@ -1,0 +1,60 @@
+@font-face {
+    font-family: "bold";
+    src: url(./assets/fonts/6xK3dSBYKcSV-LCoeQqfX1RYOo3qOK7lujVj9w.woff2);
+}
+
+@font-face {
+    font-family: "light";
+    src: url(./assets/fonts/6xKydSBYKcSV-LCoeQqfX1RYOo3ik4zwlxdu3cOWxw.woff2);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    background-image: url(./assets/images/bg.jpg);
+}
+
+body::after {
+    background-image: url("assets/images/overlay.png");
+}
+
+/* Nav Section */
+nav {
+    color: #ffffffb4;
+    font-size: 2rem;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+}
+
+nav ul li {
+    padding-inline: 1rem;
+    list-style-type: none;
+}
+
+/* end of Nav Section */
+
+.arrow-up {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+
+    border-bottom: 30px solid #fff;
+}
+
+/* Footer Section */
+
+footer,
+a {
+    color: #f4f4f4;
+    font-size: 0.9rem;
+}
+
+/* end of Footer Section */
