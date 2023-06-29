@@ -1,42 +1,4 @@
-@font-face {
-    font-family: "bold";
-    src: url(./assets/fonts/6xK3dSBYKcSV-LCoeQqfX1RYOo3qOK7lujVj9w.woff2);
-}
-
-@font-face {
-    font-family: "light";
-    src: url(./assets/fonts/6xKydSBYKcSV-LCoeQqfX1RYOo3ik4zwlxdu3cOWxw.woff2);
-}
-
-body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-    background-image: url(./assets/images/bg.jpg);
-}
-
-body::after {
-    background: url("assets/images/overlay.png");
-}
-
 /* Nav Section */
-
-nav {
-    color: #ffffffb4;
-    font-size: 2rem;
-}
-
-nav ul {
-    display: flex;
-    flex-direction: row;
-}
-
-nav ul li {
-    padding-inline: 1rem;
-    list-style-type: none;
-}
 
 nav .fa-home {
     color: #ffffff;
@@ -47,15 +9,8 @@ nav .fa-home {
 /* Card Content */
 
 .arrow-up {
-    position: absolute;
     top: -20px;
     left: 38.5%;
-    width: 0;
-    height: 0;
-    border-left: 25px solid transparent;
-    border-right: 25px solid transparent;
-
-    border-bottom: 30px solid #fff;
 }
 
 .profile-card {
@@ -66,7 +21,7 @@ nav .fa-home {
     background-color: #ffffff;
 }
 
-.profile-card .text-side {
+.text-side {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -74,7 +29,7 @@ nav .fa-home {
     width: 65%;
 }
 
-.profile-card .image-side {
+.image-side {
     width: 35%;
 }
 
@@ -95,23 +50,15 @@ nav .fa-home {
     background-color: rgba(0, 0, 0, 0.7);
 }
 
-.text-side .name-text {
+.name-text {
     margin: 0;
     font-family: "bold";
 }
 
-.text-side .info-text {
+.info-text {
     margin: 0;
     font-family: "light";
     color: gray;
 }
 
 /* end of Card Content */
-
-/* Footer Section */
-footer,
-a {
-    color: #f4f4f4;
-    font-size: 0.9rem;
-}
-/* end of Footer Section */
