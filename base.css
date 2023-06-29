@@ -15,6 +15,10 @@ body {
     align-items: center;
     margin: auto;
     background-image: url(./assets/images/bg.jpg);
+    background-size: cover;
+    min-height: 80vh;
+    margin-bottom: 20vh;
+
 }
 
 body::after {
